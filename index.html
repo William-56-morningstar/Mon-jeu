@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETIT QUIZ pour fuir le NKANG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>PETIT QUIZ pour fuir le NKANG 🇨🇲</h1>
+    </header>
+
+    <main class="quiz-container">
+        <div id="game-over" class="hidden">
+            <h2>PERDU ! Le Nkang t'a rattrapé...</h2>
+            <p>Score final : <span id="final-score">0</span></p>
+            <button onclick="startGame()">Réessayer</button>
+        </div>
+
+        <div id="game-content">
+            <div class="score-board">Score actuel : <span id="current-score">0</span></div>
+            
+            <div class="flag-display">
+                <img id="flag-img" src="" alt="Drapeau à deviner">
+            </div>
+
+            <div class="inputs">
+                <input type="text" id="country-input" placeholder="Nom du pays" autocomplete="off">
+                <input type="text" id="capital-input" placeholder="Capitale" autocomplete="off">
+                <button id="submit-btn">Valider</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Aloys William, copyright 2026 école des postes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
